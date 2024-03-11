@@ -10,7 +10,7 @@ const NewWindow = (props) => {
 
   useEffect(() => {
     const storedPassword = localStorage.getItem('loggedInPassword');
-    console.log(storedPassword);
+    //console.log(storedPassword);
     if (storedPassword !== null) {
       props.setPassword(storedPassword);
       // navigate(`/new-page/${storedPassword}`);
@@ -18,7 +18,7 @@ const NewWindow = (props) => {
   }, [props]);
 
   const handleJoinMeet = () => {
-    console.log(props.pass);
+    //console.log(props.pass);
     if(props.pass==="mahdir10") window.open("https://meet.google.com/gqh-urnz-ixd", '_blank');
     if(props.pass==="afiqrcs15") window.open("https://meet.google.com/fud-vqam-vpx", '_blank');
   };

@@ -12,7 +12,7 @@ const App = () => {
     <Router>
         <Routes>
         <Route exact path="/" element={<Home setPassword={setPassword}/>}/>
-        <Route path="/new-page/:password" element={<NewWindow pass={password} setPassword={setPassword}/>} />
+        <Route path="/contents/:password" element={<NewWindow pass={password} setPassword={setPassword}/>} />
         </Routes>
     </Router>
     
