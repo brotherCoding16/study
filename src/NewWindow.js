@@ -1,18 +1,21 @@
 import React, { useState,useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const NewWindow = (props) => {
   // const { password } = props.pass;
   const [selectedContent, setSelectedContent] = useState(null); // Stores selected child folder ("code" or "note")
   const [practiceOption, setPracticeOption] = useState(null);
+  const navigate = useNavigate();
   //const [password,setPassword] = useState("");
 
-  // useEffect(() => {
-  //   const storedPassword = localStorage.getItem('loggedInPassword');
-  //   console.log(storedPassword);
-  //   if (storedPassword !== null) {
-  //     props.setPassword(storedPassword);
-  //   }
-  // }, [props]);
+  useEffect(() => {
+    const storedPassword = localStorage.getItem('loggedInPassword');
+    console.log(storedPassword);
+    if (storedPassword !== null) {
+      props.setPassword(storedPassword);
+      navigate(`/new-page/${storedPassword}`);
+    }
+  }, [props,navigate]);
 
   const handleJoinMeet = () => {
     console.log(props.pass);
