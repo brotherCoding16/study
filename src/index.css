@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background:black;
+background-repeat: no-repeat;
+
+}
+*{
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.oc{
+  padding-top:0px ;
+  color: rgb(234, 240, 242);
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+  padding: 10px;
+  background: rgb(39, 50, 50);
+  
+}
+hr{
+  border: 1px solid black;
+  margin-top: 1px;
+}
+.live{
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(254, 254, 254, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  color:  rgb(1, 80, 104);
+  font-family: monospace;
+  font-size: 17px;
+  background:rgb(219, 217, 217);
+  box-shadow: rgba(246, 245, 245, 0.684) 0px 2px 4px 0px, rgba(255, 255, 255, 0.745) 0px 2px 16px 0px;
+}
+.join{
+  background-color: #8dbb9d;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color:  rgb(1, 80, 104);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
+}
+.content,.content_code,.content_note{
+  color:  rgb(1, 80, 104);
+  font-size: 17px;
+  font-family: monospace;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  background:rgb(219, 217, 217);
+  box-shadow: rgba(246, 245, 245, 0.78) 0px 2px 4px 0px, rgba(255, 255, 255, 0.807) 0px 2px 16px 0px;
+}
+.code,.note{
+  background-color: #8dbb9d;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color:  rgb(1, 80, 104);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.pra{
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 17px;
+  border: none;
+  margin: 7px;
+  background:rgb(219, 217, 217);
+  box-shadow: rgba(246, 245, 245, 0.773) 0px 2px 4px 0px, rgba(255, 255, 255, 0.784) 0px 2px 16px 0px;
+}
+.prat{
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 17px;
+  border: none;
+  text-align: center;
+color:  rgb(1, 80, 104);
+  margin-top: 20px;
+  box-shadow: rgba(246, 245, 245, 0.807) 0px 2px 4px 0px, rgba(255, 255, 255, 0.792) 0px 2px 16px 0px;
+  background:rgb(219, 217, 217);
+  margin-top: 30px;
+  margin: 20px;
+  
+}
+.practies{
+  background-color: #8dbb9d;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color:  rgb(1, 80, 104);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 8px 90px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  
+  font-family: monospace;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.sel{
+  background-color: #8dbb9d;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color:  rgb(1, 80, 104);
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 9px 20px;
+  text-align: center;
+  border: 0;
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: bold;
+}
+/* home */
+.input-box{
+  position: relative;
+  width: 60%;
+  height: 0px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  color:  rgb(1, 80, 104);
+}
+.input-box{
+  background: transparent;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: 2px solid  rgb(1, 80, 104);
+  border-radius: 40px;
+  font-size: 16px;
+  color:  rgb(1, 80, 104);
+  padding: 20px 25px 20px 20px;
+}
+.input-box::placeholder {
+  color:  rgb(1, 80, 104);
+  font-family: monospace;
+}
+.wrapper {
+  height: 30px;
+  display: grid;
+  
+
+}
+
+.typing-demo {
+  width: 26ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  color:  rgb(1, 80, 104);
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.login{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  width: 70%;
+  height:250px;
+  border-radius: 50px;
+  }
+
+
+/* CSS */
+.btn {
+  background-color: #a7b5ac;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color:  rgb(1, 80, 104);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.epal{
+  color: rgb(1, 80, 104);
+  font-weight: bold;
+  white-space: nowrap;
+  font-family: monospace;
+  font-size: 1.5em;
+}
+.home{
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  min-height: 100vh;
+background-repeat: no-repeat;
+}
