@@ -41,7 +41,7 @@ const Home = (props) => {
       <center>
       <div className='login'>
         <br></br>
-      <p className='epal'>Enter password And login</p>
+      <p className='epal'>Enter Your Password</p>
       <input
         className='input-box'
         type="password"
