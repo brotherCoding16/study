@@ -1,11 +1,11 @@
 import React, { useState,useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const NewWindow = (props) => {
   // const { password } = props.pass;
   const [selectedContent, setSelectedContent] = useState(null); // Stores selected child folder ("code" or "note")
   const [practiceOption, setPracticeOption] = useState(null);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   //const [password,setPassword] = useState("");
 
   useEffect(() => {
@@ -13,9 +13,9 @@ const NewWindow = (props) => {
     console.log(storedPassword);
     if (storedPassword !== null) {
       props.setPassword(storedPassword);
-      navigate(`/new-page/${storedPassword}`);
+      // navigate(`/new-page/${storedPassword}`);
     }
-  }, [props,navigate]);
+  }, [props]);
 
   const handleJoinMeet = () => {
     console.log(props.pass);
@@ -54,7 +54,7 @@ const NewWindow = (props) => {
           return (
             <div className='content_code'>
               <h2>Codes</h2>
-              <iframe src="https://drive.google.com/embeddedfolderview?id=10PkiuB4krPIR8isYEBAtbuYIthwGNaRZ" width="100%" height="250" frameborder="0"></iframe>
+              <iframe src="https://drive.google.com/embeddedfolderview?id=10PkiuB4krPIR8isYEBAtbuYIthwGNaRZ" title='1' width="100%" height="250" frameborder="0"></iframe>
             </div>
           );
         case 'note':
@@ -62,7 +62,7 @@ const NewWindow = (props) => {
             <div className='content_note'>
               <h2>Notes</h2>
               {/* Add your notes or documents here */}
-              <iframe src="https://drive.google.com/embeddedfolderview?id=10NPsNZFDNzhw6tvqgV-HJstsTk5yRNQA" width="100%" height="250" frameborder="0"></iframe>
+              <iframe src="https://drive.google.com/embeddedfolderview?id=10NPsNZFDNzhw6tvqgV-HJstsTk5yRNQA" title='2' width="100%" height="250" frameborder="0"></iframe>
             </div>
           );
         default:
@@ -80,42 +80,42 @@ const NewWindow = (props) => {
           return (
             <div className='prat'>
             <h1>I/O Operation problems</h1>
-            <iframe src="https://drive.google.com/embeddedfolderview?id=10yd3DRSsG3wtEGCQPlfFLoxlNg-v7nU6" width="100%" height="250" frameBorder="0"></iframe>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=10yd3DRSsG3wtEGCQPlfFLoxlNg-v7nU6" title='3' width="100%" height="250" frameBorder="0"></iframe>
             </div>
           );
         case 'option1':
           return (
             <div className='prat'>
             <h1>if-else problems</h1>
-            <iframe src="https://drive.google.com/embeddedfolderview?id=10m-Bj2GBQ23VyNic3tUV6Wj9R2BxBpZ0" width="100%" height="250" frameBorder="0"></iframe>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=10m-Bj2GBQ23VyNic3tUV6Wj9R2BxBpZ0" title='4' width="100%" height="250" frameBorder="0"></iframe>
             </div>
           );
         case 'option2':
           return (
             <div className='prat'>
             <h1>swtich-case problems</h1>
-            <iframe src="https://example.com/swtich-case" width="100%" height="250" frameBorder="0"></iframe>
+            <iframe src="https://example.com/swtich-case" title='5' width="100%" height="250" frameBorder="0"></iframe>
             </div>
           );
         case 'option3':
           return (
             <div className='prat'>
             <h1>loop problems</h1>
-            <iframe src="https://drive.google.com/embeddedfolderview?id=1111RlTvWPTrLCRKxu9fi3SRfJw_FZFyO" width="100%" height="250" frameBorder="0"></iframe>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=1111RlTvWPTrLCRKxu9fi3SRfJw_FZFyO" title='6' width="100%" height="250" frameBorder="0"></iframe>
             </div>
           );
         case 'option4':
           return (
             <div className='prat'>
             <h1>array problems</h1>
-            <iframe src="https://example.com/array" width="100%" height="250" frameBorder="0"></iframe>
+            <iframe src="https://example.com/array" title='7' width="100%" height="250" frameBorder="0"></iframe>
             </div>
           );
         case 'option5':
           return (
             <div className='prat'>
             <h1>string problems</h1>
-            <iframe src="https://example.com/string" width="100%" height="250" frameBorder="0"></iframe>
+            <iframe src="https://example.com/string" title='8' width="100%" height="250" frameBorder="0"></iframe>
             </div>
           );
         // ... add more cases as needed
