@@ -6,13 +6,13 @@ const NewWindow = (props) => {
   const [practiceOption, setPracticeOption] = useState(null);
   //const [password,setPassword] = useState("");
 
-  useEffect(() => {
-    const storedPassword = localStorage.getItem('loggedInPassword');
-    console.log(storedPassword);
-    if (storedPassword !== null) {
-      props.setPassword(storedPassword);
-    }
-  }, [props]);
+  // useEffect(() => {
+  //   const storedPassword = localStorage.getItem('loggedInPassword');
+  //   console.log(storedPassword);
+  //   if (storedPassword !== null) {
+  //     props.setPassword(storedPassword);
+  //   }
+  // }, [props]);
 
   const handleJoinMeet = () => {
     console.log(props.pass);
