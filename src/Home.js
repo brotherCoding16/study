@@ -32,7 +32,7 @@ const Home = (props) => {
       <br></br><br></br>
       <div className='wrapper'>
         <center>
-      <h2 className='typing-demo'>Welcome to the Home Page! </h2>
+      <h2 className='typing-demo'>Welcome to the Home Page!</h2>
       </center>
       
       </div >
