@@ -191,13 +191,13 @@ color:  rgb(1, 80, 104);
 }
 
 .typing-demo {
-  width: 26ch;
+  width: 25ch;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 2em;
+  font-size: 1.8em;
   color:  rgb(1, 80, 104);
 }
 
@@ -215,7 +215,7 @@ color:  rgb(1, 80, 104);
 
 .login{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  width: 70%;
+  width: 90%;
   height:250px;
   border-radius: 50px;
   }
@@ -252,10 +252,12 @@ color:  rgb(1, 80, 104);
   font-weight: bold;
   white-space: nowrap;
   font-family: monospace;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 .home{
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   min-height: 100vh;
 background-repeat: no-repeat;
 }
+
+

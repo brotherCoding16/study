@@ -8,6 +8,7 @@ const NewWindow = (props) => {
 
   useEffect(() => {
     const storedPassword = localStorage.getItem('loggedInPassword');
+    console.log(storedPassword);
     if (storedPassword !== null) {
       props.setPassword(storedPassword);
     }
