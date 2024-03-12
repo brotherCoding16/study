@@ -56,7 +56,8 @@ const NewWindow = (props) => {
         <br></br>
         {(props.pass === "mahdir10" || props.pass === "afiqrcs15") && (
         <button className='code' onClick={() => handleContentSelect('code')}>Codes</button>)}&nbsp;&nbsp;
-        <button className='note' onClick={() => handleContentSelect('note')}>Notes</button>
+        <button className='note' onClick={() => handleContentSelect('note')}>Notes</button>&nbsp;&nbsp;
+        <button className='note' onClick={() => handleContentSelect('Past Exams')}>Past Exams</button>
       </div>
     );
   };
@@ -77,6 +78,14 @@ const NewWindow = (props) => {
               <h2>Notes</h2>
               {/* Add your notes or documents here */}
               <iframe src="https://drive.google.com/embeddedfolderview?id=10NPsNZFDNzhw6tvqgV-HJstsTk5yRNQA" title='2' width="100%" height="250" frameborder="0"></iframe>
+            </div>
+          );
+          case 'Past Exams':
+          return (
+            <div className='content_note'>
+              <h2>Past Exams</h2>
+              {/* Add your notes or documents here */}
+              <iframe src="https://drive.google.com/embeddedfolderview?id=1GN0ZCU-lDk-S33IYl9ENnVMejQr-QiIh" title='00' width="100%" height="250" frameborder="0"></iframe>
             </div>
           );
         default:
