@@ -1,5 +1,7 @@
+import ExamButton from './ExamButton';
 import React, { useState,useEffect } from 'react';
 // import { useNavigate } from 'react-router-dom';
+
 
 const NewWindow = (props) => {
   // const { password } = props.pass;
@@ -16,6 +18,18 @@ const NewWindow = (props) => {
       // navigate(`/new-page/${storedPassword}`);
     }
   }, [props]);
+
+  const handleExamClick = () => {
+    // Define the behavior when the "Exam" button is clicked
+    console.log('Exam button clicked');
+    // Add your logic for handling the exam button click
+  };
+
+  const handleFileUpload = (file) => {
+    // Handle the uploaded file here
+    console.log('File uploaded:', file);
+    // Add your logic for handling the uploaded file
+  };
 
   const handleJoinMeet = () => {
     //console.log(props.pass);
@@ -178,6 +192,9 @@ const NewWindow = (props) => {
     </>
   )}
   <br></br><br></br><br></br>
+  {(props.pass === "mahdir10" || props.pass === "afiqrcs15") && (
+        <ExamButton handleExamClick={handleExamClick} handleFileUpload={handleFileUpload} />
+      )}
     </div>
   );
 };
