@@ -114,9 +114,9 @@ const ExamButton = ({ handleExamClick, handleFileUpload }) => {
             <div className='upload'>
               {/* Add content for Answer Scripts here */}
               <p className='que'>Your Script</p>
-        <iframe title="questionFrame" src={require(`./Answer/fs.PNG`)} width="100%" height="600px" />
+        <iframe title="questionFrame" src={require(`./Answer/CSE 305 Part 2 Syllabus.pdf`)} width="100%" height="600px" />
         <button>
-            <a href={require(`./Answer/fs.PNG`)} download="fs.PNG">
+            <a href={require(`./Answer/CSE 305 Part 2 Syllabus.pdf`)} download="CSE 305 Part 2 Syllabus.pdf">
               Download PDF
             </a>
           </button>
