@@ -1,5 +1,6 @@
 import ExamButton from './ExamButton';
 import React, { useState,useEffect } from 'react';
+
 // import { useNavigate } from 'react-router-dom';
 
 
@@ -50,7 +51,6 @@ const NewWindow = (props) => {
       <div className='content'>
         
         <h2 >Contents</h2>
-        <br></br>
         <hr></hr>
         <hr></hr>
         <br></br>
@@ -145,6 +145,9 @@ const NewWindow = (props) => {
     return (
       <div className='pra'>
         <center>
+          <h2 className='pr'>Practice</h2>
+          <hr></hr><hr></hr>
+          <br></br>
         <button onClick={() => handlePracticeOption('select')} className='practies'>Practice</button> <br></br><br></br>
         {practiceOption === 'select' && (
           
@@ -165,14 +168,15 @@ const NewWindow = (props) => {
   };
 
   return (
-    <div>
+    
+    
+    <div> 
       <div className='oc'>
         <h2>ONLINE CLASS</h2>
       </div>
       <br></br>
       <div className='live'>
         <h2>Live Class Link</h2>
-        <br></br>
         <hr></hr>
         <hr></hr>
         <br></br>
@@ -191,11 +195,13 @@ const NewWindow = (props) => {
       {renderPracticeContent()}
     </>
   )}
-  <br></br><br></br><br></br>
+  <br></br><br></br>
   {(props.pass === "mahdir10" || props.pass === "afiqrcs15") && (
         <ExamButton handleExamClick={handleExamClick} handleFileUpload={handleFileUpload} />
       )}
+    
     </div>
+  
   );
 };
 

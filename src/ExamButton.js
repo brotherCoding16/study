@@ -55,6 +55,9 @@ const ExamButton = ({ handleExamClick, handleFileUpload }) => {
 
   return (
     <div className='exam'>
+        <h2>Exam</h2>
+        <hr></hr><hr></hr>
+        <br></br>
       <button onClick={handleExamButtonClick} className='exam-btn'>
         &nbsp;&nbsp;Exam Window&nbsp;&nbsp;
       </button>
