@@ -79,7 +79,8 @@ const NewWindow = (props) => {
             <div className='content_note'>
               <h2>Notes</h2>
               {/* Add your notes or documents here */}
-              <iframe src="https://drive.google.com/embeddedfolderview?id=10NPsNZFDNzhw6tvqgV-HJstsTk5yRNQA" title='2' width="100%" height="250" frameborder="0"></iframe>
+              {(props.pass === "mahdir10" || props.pass === "afiqrcs15") && (<iframe src="https://drive.google.com/embeddedfolderview?id=10NPsNZFDNzhw6tvqgV-HJstsTk5yRNQA" title='2' width="100%" height="250" frameborder="0"></iframe>)}
+              {props.pass === "esha10" && (<iframe src="https://drive.google.com/embeddedfolderview?id=1jMhdKE9pC1r7kkObo6QLlMzpHIlb8r3" title='78' width="100%" height="250" frameborder="0"></iframe>)}
             </div>
           );
           case 'Past Exams':
