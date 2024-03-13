@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Home = (props) => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
-  const validPasswords = ['mahdir10', 'afiqrcs15', 'asdf'];
+  const validPasswords = ['mahdir10', 'afiqrcs15', 'asdf', 'esha10'];
 
   const handlePasswordSubmit = () => {
     const isValidPassword = validPasswords.includes(password);

@@ -78,7 +78,7 @@ hr{
   background:rgb(219, 217, 217);
   box-shadow: rgba(246, 245, 245, 0.78) 0px 2px 4px 0px, rgba(255, 255, 255, 0.807) 0px 2px 16px 0px;
 }
-.code,.note{
+.code,.note,.past{
   background-color: #8dbb9d;
   border-radius: 100px;
   box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
@@ -97,6 +97,9 @@ hr{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+.past-m,.past-e{
+  display: none;
 }
 .pra{
   padding: 10px;
@@ -197,7 +200,7 @@ color:  rgb(1, 80, 104);
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 1.8em;
+  font-size: 2em;
   color:  rgb(1, 80, 104);
 }
 
@@ -258,4 +261,32 @@ color:  rgb(1, 80, 104);
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   min-height: 100vh;
 background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px){
+  .typing-demo{
+    font-size: 1.5em;
+    left:1px;
+    right: 1px;
+  }
+  .past-m,.past-e{
+    display: block;
+  }
+}
+@media only screen and (max-width: 255px ){
+  .past-m{
+    display: none;
+  }
+  .past-e{
+    display: none;
+    
+  }
+  .join{
+    width:80px;
+    padding: 8px;
+    text-align: center;
+  }
+  .content{
+    font-size: 14px;
+  }
 }

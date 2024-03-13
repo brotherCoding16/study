@@ -36,6 +36,7 @@ const NewWindow = (props) => {
     //console.log(props.pass);
     if(props.pass==="mahdir10") window.open("https://meet.google.com/gqh-urnz-ixd", '_blank');
     if(props.pass==="afiqrcs15") window.open("https://meet.google.com/fud-vqam-vpx", '_blank');
+    if(props.pass==="esha10") window.open("https://meet.google.com/igs-jkgu-zkb", '_blank');
   };
 
   const handleContentSelect = (content) => {
@@ -56,8 +57,9 @@ const NewWindow = (props) => {
         <br></br>
         {(props.pass === "mahdir10" || props.pass === "afiqrcs15") && (
         <button className='code' onClick={() => handleContentSelect('code')}>Codes</button>)}&nbsp;&nbsp;
-        <button className='note' onClick={() => handleContentSelect('note')}>Notes</button>&nbsp;&nbsp;
-        <button className='note' onClick={() => handleContentSelect('Past Exams')}>Past Exams</button>
+        <button className='note' onClick={() => handleContentSelect('note')}>Notes</button><p>&nbsp;&nbsp;</p>
+        {/* <br className='past-m'></br><br className='past-e'></br> */}
+        &nbsp;&nbsp;<button className='past' onClick={() => handleContentSelect('Past Exams')}>Past Exams</button>
       </div>
     );
   };
@@ -198,14 +200,14 @@ const NewWindow = (props) => {
       {renderSelectedContent()}
       {/* New button added here */}
       <br/>
-      { (props.pass === "mahdir10" || props.pass === "afiqrcs15") && (
+      { (props.pass === "mahdir10" || props.pass === "afiqrcs15" ) && (
     <>
       {renderPracticeDropdown()}
       {renderPracticeContent()}
     </>
   )}
   <br></br><br></br>
-  {(props.pass === "mahdir10" || props.pass === "afiqrcs15") && (
+  {(props.pass === "mahdir10" || props.pass === "afiqrcs15" || props.pass==="esha10") && (
         <ExamButton handleExamClick={handleExamClick} handleFileUpload={handleFileUpload} />
       )}
     
