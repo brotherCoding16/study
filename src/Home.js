@@ -20,7 +20,7 @@ const Home = (props) => {
       setAlertMessage('Login successful!');
       setShowAlert(true);
     } else {
-      setAlertMessage('Invalid password. Please try again.');
+      setAlertMessage('Invalid password.Try again.');
       setShowAlert(true);
     }
   };
