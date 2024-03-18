@@ -5,6 +5,8 @@ const Home = (props) => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
   const validPasswords = ['mahdir10', 'afiqrcs15', 'asdf', 'esha10'];
+  const [showAlert, setShowAlert] = useState(false);
+  const [alertMessage, setAlertMessage] = useState('');
 
   const handlePasswordSubmit = () => {
     const isValidPassword = validPasswords.includes(password);
@@ -14,6 +16,12 @@ const Home = (props) => {
       localStorage.setItem('loggedInPassword', password);
       props.setPassword(password);
       navigate(`/contents/${password}`);
+      // Show alert when login is successful
+      setAlertMessage('Login successful!');
+      setShowAlert(true);
+    } else {
+      setAlertMessage('Invalid password. Please try again.');
+      setShowAlert(true);
     }
   };
 
@@ -47,6 +55,15 @@ const Home = (props) => {
           <button className='btn' onClick={handlePasswordSubmit}>Submit</button>
         </div>
       </center>
+      {showAlert && (
+        <div className='custom-alert'>
+          <p>{alertMessage}</p>
+          <center>
+          <button onClick={() => setShowAlert(false)}>Close</button>
+          </center>
+          
+        </div>
+      )}
     </div>
   );
 };
