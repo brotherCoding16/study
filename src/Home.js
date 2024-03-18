@@ -57,8 +57,8 @@ const Home = (props) => {
       </center>
       {showAlert && (
         <div className='custom-alert'>
-          <p>{alertMessage}</p>
           <center>
+          <p>{alertMessage}</p>
           <button onClick={() => setShowAlert(false)}>Close</button>
           </center>
           
