@@ -38,6 +38,7 @@ const NewWindow = (props) => {
     if(props.pass==="mahdir10") window.open("https://meet.google.com/xio-poeb-cib", '_blank');
     if(props.pass==="afiqrcs15") window.open("https://meet.google.com/fud-vqam-vpx", '_blank');
     if(props.pass==="esha10") window.open("https://meet.google.com/igs-jkgu-zkb", '_blank');
+    if(props.pass==="afsana10") window.open("https://meet.google.com/zjk-tyob-spm", '_blank');
   };
 
   const handleContentSelect = (content) => {
@@ -82,6 +83,7 @@ const NewWindow = (props) => {
               {/* Add your notes or documents here */}
               {(props.pass === "mahdir10" || props.pass === "afiqrcs15") && (<iframe src="https://drive.google.com/embeddedfolderview?id=10NPsNZFDNzhw6tvqgV-HJstsTk5yRNQA" title='2' width="100%" height="250" frameborder="0"></iframe>)}
               {props.pass === "esha10" && (<iframe src="https://drive.google.com/embeddedfolderview?id=1jMhdKE9pC1r7kkObo6QLlMzpHIlb8r3e" title='78' width="100%" height="250" frameborder="0"></iframe>)}
+              {props.pass === "afsana10" && (<iframe src="https://drive.google.com/embeddedfolderview?id=1QROa2Mqg0fDjSmhkXOcoef757gMyGvt_" title='56' width="100%" height="250" frameborder="0"></iframe>)}
             </div>
           );
           case 'Past Exams':
@@ -162,7 +164,7 @@ const NewWindow = (props) => {
           <hr></hr><hr></hr>
           <br></br>
         <button onClick={() => handlePracticeOption('select')} className='practies'>Practice</button> <br></br><br></br>
-        {practiceOption === 'select' && (
+        {practiceOption === 'select' &&  (
           
           <select className='sel' onChange={(e) => handlePracticeOption(e.target.value)}>
             <option value="option0">Select</option> 
@@ -209,7 +211,7 @@ const NewWindow = (props) => {
     </>
   )}
   <br></br><br></br>
-  {(props.pass === "mahdir10" || props.pass === "afiqrcs15" || props.pass==="esha10") && (
+  {(props.pass === "mahdir10" || props.pass === "afiqrcs15" || props.pass==="esha10" || props.pass==="afsana10") && (
         <ExamButton handleExamClick={handleExamClick} handleFileUpload={handleFileUpload} />
       )}
     
