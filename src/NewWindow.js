@@ -38,7 +38,7 @@ const NewWindow = (props) => {
     if(props.pass==="mahdir10") window.open("https://meet.google.com/hyi-okwm-usg", '_blank');
     if(props.pass==="afiqrcs15") window.open("https://meet.google.com/fud-vqam-vpx", '_blank');
     if(props.pass==="esha10") window.open("https://meet.google.com/igs-jkgu-zkb", '_blank');
-    if(props.pass==="afsana10") window.open("https://meet.google.com/ovh-zqcc-sns", '_blank');
+    if(props.pass==="afsana10") window.open("https://meet.google.com/qse-prwx-mwb", '_blank');
   };
 
   const handleContentSelect = (content) => {
