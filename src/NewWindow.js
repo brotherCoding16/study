@@ -35,7 +35,7 @@ const NewWindow = (props) => {
 
   const handleJoinMeet = () => {
     //console.log(props.pass);
-    if(props.pass==="mahdir10") window.open("https://meet.google.com/iyo-fcev-rwz", '_blank');
+    if(props.pass==="mahdir10") window.open("https://meet.google.com/okn-zihs-pje", '_blank');
     if(props.pass==="afiqrcs15") window.open("https://meet.google.com/fud-vqam-vpx", '_blank');
     if(props.pass==="esha10") window.open("https://meet.google.com/igs-jkgu-zkb", '_blank');
     if(props.pass==="afsana10") window.open("https://meet.google.com/cdx-pdaa-tmp", '_blank');
