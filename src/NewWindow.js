@@ -21,6 +21,9 @@ const NewWindow = (props) => {
     }
   }, [props]);
 
+
+  
+
   const handleExamClick = () => {
     // Define the behavior when the "Exam" button is clicked
     console.log('Exam button clicked');
@@ -35,7 +38,7 @@ const NewWindow = (props) => {
 
   const handleJoinMeet = () => {
     //console.log(props.pass);
-    if(props.pass==="mahdir10") window.open("https://meet.google.com/okn-zihs-pje", '_blank');
+    if(props.pass==="mahdir10") window.open("https://meet.google.com/iit-uvoq-jif", '_blank');
     if(props.pass==="afiqrcs15") window.open("https://meet.google.com/fud-vqam-vpx", '_blank');
     if(props.pass==="esha10") window.open("https://meet.google.com/igs-jkgu-zkb", '_blank');
     if(props.pass==="afsana10") window.open("https://meet.google.com/swz-hqwa-van", '_blank');
@@ -91,7 +94,10 @@ const NewWindow = (props) => {
             <div className='content_note'>
               <h2>Past Exams</h2>
               {/* Add your notes or documents here */}
-              <iframe src="https://drive.google.com/embeddedfolderview?id=1GN0ZCU-lDk-S33IYl9ENnVMejQr-QiIh" title='00' width="100%" height="250" frameborder="0"></iframe>
+              {(props.pass === "mahdir10" || props.pass === "afiqrcs15") && (<iframe src="https://drive.google.com/embeddedfolderview?id=1GN0ZCU-lDk-S33IYl9ENnVMejQr-QiIh" title='00' width="100%" height="250" frameborder="0"></iframe>)}
+              {(props.pass === "esha10" || props.pass === "afiqrcs15") && (<iframe src="https://drive.google.com/embeddedfolderview?id=1JFoYfipJ2DvpiQzVG_be7gdmOQ8ucuYH" title='00' width="100%" height="250" frameborder="0"></iframe>)}
+              {(props.pass === "afsana10" || props.pass === "afiqrcs15") && (<iframe src="https://drive.google.com/embeddedfolderview?id=1oN6ZnH6BrV40Xry7gct2IBO5kOiWD4Po" title='00' width="100%" height="250" frameborder="0"></iframe>)}
+
             </div>
           );
         default:
