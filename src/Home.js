@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Home = (props) => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
-  const validPasswords = ['mahdir10', 'afiqrcs15', 'asdf', 'esha10','afsana10'];
+  const validPasswords = ['mahdir10', 'afiqrcs15', 'asdf', 'esha10','afsana10', 'abir10'];
   const [showAlert, setShowAlert] = useState(false);
   const [alertMessage, setAlertMessage] = useState('');
 

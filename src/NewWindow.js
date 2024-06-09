@@ -35,13 +35,14 @@ const NewWindow = (props) => {
     console.log('File uploaded:', file);
     // Add your logic for handling the uploaded file
   };
-
+  
   const handleJoinMeet = () => {
     //console.log(props.pass);
     if(props.pass==="mahdir10") window.open("https://meet.google.com/dbp-pfmf-kas", '_blank');
     if(props.pass==="afiqrcs15") window.open("https://meet.google.com/fud-vqam-vpx", '_blank');
     if(props.pass==="esha10") window.open("https://meet.google.com/igs-jkgu-zkb", '_blank');
     if(props.pass==="afsana10") window.open("https://meet.google.com/dso-efop-gzz", '_blank');
+    if(props.pass==="abir10") window.open("https://meet.google.com/cdo-uiby-mgi", '_blank');
   };
 
   const handleContentSelect = (content) => {
@@ -87,6 +88,7 @@ const NewWindow = (props) => {
               {(props.pass === "mahdir10" || props.pass === "afiqrcs15") && (<iframe src="https://drive.google.com/embeddedfolderview?id=10NPsNZFDNzhw6tvqgV-HJstsTk5yRNQA" title='2' width="100%" height="250" frameborder="0"></iframe>)}
               {props.pass === "esha10" && (<iframe src="https://drive.google.com/embeddedfolderview?id=1jMhdKE9pC1r7kkObo6QLlMzpHIlb8r3e" title='78' width="100%" height="250" frameborder="0"></iframe>)}
               {props.pass === "afsana10" && (<iframe src="https://drive.google.com/embeddedfolderview?id=1QROa2Mqg0fDjSmhkXOcoef757gMyGvt_" title='56' width="100%" height="250" frameborder="0"></iframe>)}
+              {props.pass === "abir10" && (<iframe src="https://drive.google.com/embeddedfolderview?id=1Hl6NbhW913rLG8HT1E8Ae_96zXYjmFbO" title='56' width="100%" height="250" frameborder="0"></iframe>)}
             </div>
           );
           case 'Past Exams':
@@ -97,7 +99,7 @@ const NewWindow = (props) => {
               {(props.pass === "mahdir10" || props.pass === "afiqrcs15") && (<iframe src="https://drive.google.com/embeddedfolderview?id=1GN0ZCU-lDk-S33IYl9ENnVMejQr-QiIh" title='00' width="100%" height="250" frameborder="0"></iframe>)}
               {(props.pass === "esha10" || props.pass === "afiqrcs15") && (<iframe src="https://drive.google.com/embeddedfolderview?id=1JFoYfipJ2DvpiQzVG_be7gdmOQ8ucuYH" title='00' width="100%" height="250" frameborder="0"></iframe>)}
               {(props.pass === "afsana10" || props.pass === "afiqrcs15") && (<iframe src="https://drive.google.com/embeddedfolderview?id=1oN6ZnH6BrV40Xry7gct2IBO5kOiWD4Po" title='00' width="100%" height="250" frameborder="0"></iframe>)}
-
+              {(props.pass === "abir10" || props.pass === "afiqrcs15") && (<iframe src="https://drive.google.com/embeddedfolderview?id=1wIwemrIK3Te5LzY9H63OabPg8QnEKhtY" title='00' width="100%" height="250" frameborder="0"></iframe>)}
             </div>
           );
         default:
@@ -217,7 +219,7 @@ const NewWindow = (props) => {
     </>
   )}
   <br></br><br></br>
-  {(props.pass === "mahdir10" || props.pass === "afiqrcs15" || props.pass==="esha10" || props.pass==="afsana10") && (
+  {(props.pass === "mahdir10" || props.pass === "afiqrcs15" || props.pass==="esha10" || props.pass==="afsana10" || props.pass === "abir10") && (
         <ExamButton handleExamClick={handleExamClick} handleFileUpload={handleFileUpload} />
       )}
     
