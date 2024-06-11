@@ -40,7 +40,7 @@ const NewWindow = (props) => {
     //console.log(props.pass);
     if(props.pass==="mahdir10") window.open("https://meet.google.com/dbp-pfmf-kas", '_blank');
     if(props.pass==="afiqrcs15") window.open("https://meet.google.com/fud-vqam-vpx", '_blank');
-    if(props.pass==="esha10") window.open("https://meet.google.com/igs-jkgu-zkb", '_blank');
+    if(props.pass==="esha10") window.open("https://meet.google.com/oii-nivy-jxg", '_blank');
     if(props.pass==="afsana10") window.open("https://meet.google.com/dso-efop-gzz", '_blank');
     if(props.pass==="abir10") window.open("https://meet.google.com/bxj-iiwf-ysp", '_blank');
   };
