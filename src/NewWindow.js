@@ -220,7 +220,7 @@ const NewWindow = (props) => {
   )}
   <br></br><br></br>
   {(props.pass === "mahdir10" || props.pass === "afiqrcs15" || props.pass==="esha10" || props.pass==="afsana10" || props.pass === "abir10") && (
-        <ExamButton handleExamClick={handleExamClick} handleFileUpload={handleFileUpload} />
+        <ExamButton password={props.pass} handleExamClick={handleExamClick} handleFileUpload={handleFileUpload} />
       )}
     
     </div>
