@@ -42,7 +42,7 @@ const NewWindow = (props) => {
     if(props.pass==="afiqrcs15") window.open("https://meet.google.com/fud-vqam-vpx", '_blank');
     if(props.pass==="esha10") window.open("https://meet.google.com/wkb-jovi-paz", '_blank');
     if(props.pass==="afsana10") window.open("https://meet.google.com/yca-znqn-tzq", '_blank');
-    if(props.pass==="abir10") window.open("https://meet.google.com/czz-ocef-xxu", '_blank');
+    if(props.pass==="abir10") window.open("https://meet.google.com/ond-winx-fnd", '_blank');
   };
 
   const handleContentSelect = (content) => {
