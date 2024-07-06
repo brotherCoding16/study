@@ -8,7 +8,7 @@ const ExamButton = ({ password, handleExamClick, handleFileUpload }) => {
   const [isSending, setIsSending] = useState(false);
   const [showAnswerScripts, setShowAnswerScripts] = useState(false);
   const [showSuccessAlert, setShowSuccessAlert] = useState(false);
-  const [showPDF, setShowPDF] = useState(false);
+  const [showPDF, setShowPDF] = useState(localStorage.getItem('showPDF') === 'true');
   const [timeRemaining, setTimeRemaining] = useState('');
 
   const handleFileInputChange = (e) => {
@@ -60,7 +60,7 @@ const ExamButton = ({ password, handleExamClick, handleFileUpload }) => {
   useEffect(() => {
     const now = new Date();
     const targetTime = new Date();
-    targetTime.setHours(21, 0, 0, 0); // 9 PM
+    targetTime.setHours(16, 1, 0, 0); // 9 PM
 
     if (now > targetTime) {
       targetTime.setDate(targetTime.getDate() + 1); // Set for the next day if current time is past 9 PM
@@ -70,10 +70,12 @@ const ExamButton = ({ password, handleExamClick, handleFileUpload }) => {
 
     if (timeUntilTarget <= 0) {
       setShowPDF(true);
+      localStorage.setItem('showPDF', 'true');
       setTimeRemaining('');
     } else {
       const timer = setTimeout(() => {
         setShowPDF(true);
+        localStorage.setItem('showPDF', 'true');
         setTimeRemaining('');
       }, timeUntilTarget);
 
@@ -84,6 +86,7 @@ const ExamButton = ({ password, handleExamClick, handleFileUpload }) => {
 
         if (remaining <= 0) {
           setShowPDF(true);
+          localStorage.setItem('showPDF', 'true');
           setTimeRemaining('');
           clearInterval(interval);
         } else {
@@ -115,13 +118,13 @@ const ExamButton = ({ password, handleExamClick, handleFileUpload }) => {
       {showFileUpload && (
         <>
           <div className='question'>
-            {password==='afsana10'?
-            showPDF ? (
-              <iframe src={require('./Question/physics(upto river boat).pdf')} title='7' width="100%" height="800" frameBorder="0"></iframe>
-            ) : (
-              <p>The PDF will be available in {timeRemaining}.</p>
-            ): <p>Question</p>
-          }
+            {password === 'afsana10' || password === 'abir10' ?
+              showPDF ? (
+                <iframe src={require('./Question/River-Boat.pdf')} title='7' width="100%" height="800" frameBorder="0"></iframe>
+              ) : (
+                <p>The PDF will be available in {timeRemaining}.</p>
+              ) : <p>Question</p>
+            }
           </div>
           <br />
           <input
@@ -172,7 +175,7 @@ const ExamButton = ({ password, handleExamClick, handleFileUpload }) => {
       {showSuccessAlert && (
         <div className='alert'>
           <p>File(s) sent successfully</p>
-          <button  onClick={() => setShowSuccessAlert(false)}>Close</button>
+          <button onClick={() => setShowSuccessAlert(false)}>Close</button>
         </div>
       )}
     </div>
