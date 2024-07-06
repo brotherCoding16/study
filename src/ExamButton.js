@@ -60,7 +60,7 @@ const ExamButton = ({ password, handleExamClick, handleFileUpload }) => {
   useEffect(() => {
     const now = new Date();
     const targetTime = new Date();
-    targetTime.setHours(16, 1, 0, 0); // 9 PM
+    targetTime.setHours(16, 5, 0, 0); // 9 PM
 
     if (now > targetTime) {
       targetTime.setDate(targetTime.getDate() + 1); // Set for the next day if current time is past 9 PM
